@@ -1225,10 +1225,7 @@ footer {
   .coding-divider { display: none; }
 }
 
-@media (max-width: 480px) {
-  .achievements-grid { grid-template-columns: 1fr; }
-  .hero-stats { grid-template-columns: 1fr 1fr; }
-}
+
 
 /* ── THEME TOGGLE BUTTON ── */
 .theme-toggle {
