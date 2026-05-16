@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ankita Devi — Portfolio</title>
+  <meta name="description" content="Personal portfolio of Ankita Devi — ML Engineer, Full-Stack Developer, Competitive Programmer at NIT Silchar." />
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══════════════════ NAV ══════════════════ -->
+  <nav>
+    <a href="#" class="nav-logo">AD<span>.</span></a>
+
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <!-- Theme toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode">
+      <span class="bulb-icon">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="bulb-body" d="M9 21h6M12 3a6 6 0 0 1 6 6c0 2.22-1.21 4.16-3 5.2V17a1 1 0 0 1-1 1H10a1 1 0 0 1-1-1v-2.8C7.21 13.16 6 11.22 6 9a6 6 0 0 1 6-6z" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <path class="bulb-shine" d="M12 6v2M8.5 7.5l1.5 1.5M15.5 7.5l-1.5 1.5" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="toggle-label">Light</span>
+    </button>
+
+    <!-- Mobile hamburger -->
+    <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Mobile dropdown -->
+    <ul class="nav-mobile-menu" id="mobile-menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <!-- ══════════════════ HERO ══════════════════ -->
+  <section class="hero" id="about">
+    <div class="hero-grid-line" aria-hidden="true"></div>
+    <div class="hero-text">
+      <div class="hero-badge fade-in">OPEN TO SOFTWARE ENGINEERING • DATA ANALYTICS • AI/ML ROLES</div>
+
+      <h1 class="fade-in">Ankita<br /><em>Devi</em></h1>
+
+      <p class="hero-desc fade-in">
+        Electronics &amp; Instrumentation Engineer at NIT Silchar with a deep passion for
+        Machine Learning, AI systems, and full-stack development. Knight on LeetCode.
+        Builder of smart diagnostic tools.
+      </p>
+
+      <!-- Typing effect line -->
+      <p class="fade-in" style="font-size:0.85rem; color:var(--accent); margin-bottom:1.5rem; min-height:1.4em;">
+        <span id="hero-typing"></span><span style="animation: blink 1s step-end infinite;">|</span>
+      </p>
+
+      <div class="hero-cta fade-in">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="mailto:ankita_ug23@ei.nits.ac.in" class="btn btn-outline">Get in Touch</a>
+      </div>
+    </div>
+
+    <div class="hero-photo-wrap fade-in">
+      <!-- Floating particles -->
+      <div class="photo-particle p1"></div>
+      <div class="photo-particle p2"></div>
+      <div class="photo-particle p3"></div>
+      <div class="photo-particle p4"></div>
+      <div class="photo-particle p5"></div>
+
+      <!-- Outer glow ring -->
+      <div class="photo-ring-outer"></div>
+      <!-- Mid spinning ring -->
+      <div class="photo-ring-mid"></div>
+      <!-- Inner dashed ring -->
+      <div class="photo-ring-inner"></div>
+
+      <!-- Photo frame -->
+      <div class="photo-frame" id="photoFrame">
+        <img src="photo.jpg" alt="Ankita Devi" class="hero-photo" />
+        <div class="photo-overlay"></div>
+      </div>
+
+      <!-- Orbiting badge: ML -->
+      <div class="photo-badge badge-ml">ML</div>
+      <!-- Orbiting badge: Knight -->
+      <div class="photo-badge badge-knight">♞</div>
+      <!-- Status dot -->
+      <div class="hero-photo-dot"></div>
+    </div>
+
+    <div class="hero-stats">
+      <div class="stat-card fade-in">
+        <div class="stat-number">8.78</div>
+        <div class="stat-label">CGPA (5 Semesters)</div>
+      </div>
+      <div class="stat-card accent fade-in">
+        <div class="stat-number">800+</div>
+        <div class="stat-label">Problems Solved</div>
+      </div>
+      <div class="stat-card fade-in">
+        <div class="stat-number">1852</div>
+        <div class="stat-label">LeetCode Peak Rating</div>
+      </div>
+      <div class="stat-card fade-in">
+        <div class="stat-number">200+</div>
+        <div class="stat-label">Students Mentored</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════ PROJECTS ══════════════════ -->
+  <section id="projects">
+    <div class="section-label">Work</div>
+    <div class="section-title">Featured Projects</div>
+
+    <div class="projects-grid">
+
+      <!-- DiaGNO -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon" style="background:#dce8ff;">🩺</div>
+          <a href="https://github.com/buggytanmoy77/Neurothon" target="_blank" class="project-link"/>↗ View</a>
+        </div>
+        <div class="project-title">DiaGNO</div>
+        <div class="project-date">Mar 2025 – Apr 2025</div>
+        <p class="project-desc">
+          Smart Disease Prediction System — TF-IDF + cosine similarity retrieval to predict
+          top 5 probable diseases from natural language symptoms. Adaptive questioning via
+          decision trees improved diagnostic precision by 15%. Curated ~1,151 entry dataset
+          from Mayo Clinic.
+        </p>
+        <div class="project-tags">
+          <span class="tag">TF-IDF</span>
+          <span class="tag">NLP</span>
+          <span class="tag">Decision Trees</span>
+          <span class="tag">Flask</span>
+          <span class="tag">Python</span>
+        </div>
+      </div>
+
+      <!-- Image Merger Tool -->
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon" style="background:#d5f0e0;">🎨</div>
+          <a href="https://github.com/buggytanmoy77/Chaos" target="_blank" class="project-link">↗ View</a>
+        </div>
+        <div class="project-title">Image Merger Tool</div>
+        <div class="project-date">Feb 2025 – Mar 2025</div>
+        <p class="project-desc">
+          AI-Driven Multi-Modal Art Generator using a 3-model pipeline (CLIP Interrogator → T5 →
+          Stable Diffusion). Generates 1024×1024 images blending uploaded visuals with text prompts.
+          Reduced inference latency by 62.5% (240s → 90s), achieving 81.7% feature retention.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Stable Diffusion</span>
+          <span class="tag">CLIP</span>
+          <span class="tag">T5</span>
+          <span class="tag">Flask</span>
+          <span class="tag">Gradio</span>
+        </div>
+      </div>
+
+      <!-- E-Clinic (full width) -->
+      <div class="project-card" style="grid-column: 1 / -1;">
+        <div class="project-header">
+          <div class="project-icon" style="background:#fef3c7;">⚕️</div>
+          <a href="https://github.com/buggytanmoy77/E-Clinic" target="_blank" class="project-link">↗ View</a>
+        </div>
+        <div class="project-title">E-Clinic — Predictive Health Diagnosis System</div>
+        <div class="project-date">Oct 2024 – Dec 2024</div>
+        <p class="project-desc">
+          Benchmarked Random Forest, XGBoost, and Neural Networks for health scoring —
+          Random Forest achieved Test MSE = 0.0770, reducing error by 50.7% vs Neural Networks.
+          Integrated BLOOMZ-560M chatbot fine-tuned on MedQuAD (47k Q&amp;A pairs) for
+          domain-specific recommendations across diet, sleep, fitness, and treatment.
+        </p>
+        <div class="project-tags">
+          <span class="tag">Random Forest</span>
+          <span class="tag">XGBoost</span>
+          <span class="tag">BLOOMZ</span>
+          <span class="tag">MedQuAD</span>
+          <span class="tag">Flask</span>
+          <span class="tag">Python</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ══════════════════ EXPERIENCE ══════════════════ -->
+  <section id="experience" style="padding-top: 0;">
+    <div class="section-label">Experience</div>
+    <div class="section-title">Research &amp; Roles</div>
+
+    <div class="exp-card">
+      <div class="exp-dot"></div>
+      <div>
+        <div class="exp-title">Moderator — Machine Learning Club, NIT Silchar</div>
+        <div class="exp-meta">Aug 2024 – Present · Onsite</div>
+        <p class="exp-desc">
+          Conducted ML workshops and coding sessions for 200+ students covering supervised
+          learning, NLP, and computer vision. Mentored juniors in hands-on projects.
+          Co-organized Neurathon 2025 — a North-East level hackathon with 100+ participants
+          building AI/ML solutions.
+        </p>
+      </div>
+    </div>
+
+    <div class="exp-card">
+      <div class="exp-dot" style="background: var(--green);"></div>
+      <div>
+        <div class="exp-title">Machine Learning Specialization — Coursera (Andrew Ng)</div>
+        <div class="exp-meta">Training · Certified</div>
+        <p class="exp-desc">
+          Completed modules in Supervised ML, Advanced Algorithms, and Unsupervised Learning.
+          Implemented regression, classification, and clustering models using Python,
+          TensorFlow, and scikit-learn.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════ SKILLS ══════════════════ -->
+  <section id="skills">
+    <div class="section-label">Toolkit</div>
+    <div class="section-title">Skills &amp; Technologies</div>
+
+    <div class="skills-layout">
+      <div>
+        <p class="skills-intro">
+          A blend of low-level systems understanding from EIE and high-level ML/AI engineering.
+          Comfortable from embedded hardware to deploying neural networks and web applications.
+        </p>
+      </div>
+      <div>
+        <div class="skill-group">
+          <div class="skill-group-title">Languages</div>
+          <div class="skill-pills">
+            <span class="skill-pill hl">Python</span>
+            <span class="skill-pill hl">C++</span>
+            <span class="skill-pill">C</span>
+            <span class="skill-pill">Java</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">ReactJS</span>
+            <span class="skill-pill">HTML5</span>
+            <span class="skill-pill">CSS3</span>
+            <span class="skill-pill">SQL</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-title">ML / AI</div>
+          <div class="skill-pills">
+            <span class="skill-pill hl">TensorFlow</span>
+            <span class="skill-pill hl">scikit-learn</span>
+            <span class="skill-pill">Keras</span>
+            <span class="skill-pill">Pandas</span>
+            <span class="skill-pill">NumPy</span>
+            <span class="skill-pill">OpenCV</span>
+            <span class="skill-pill">NLTK</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <div class="skill-group-title">Tools &amp; Platforms</div>
+          <div class="skill-pills">
+            <span class="skill-pill">Git / GitHub</span>
+            <span class="skill-pill">MySQL</span>
+            <span class="skill-pill">Arduino</span>
+            <span class="skill-pill">MATLAB</span>
+            <span class="skill-pill">LabVIEW</span>
+            <span class="skill-pill">CoppeliaSim</span>
+            <span class="skill-pill">Xilinx</span>
+            <span class="skill-pill">VS Code</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════ CODING PROFILE ══════════════════ -->
+  <section style="padding-top: 0;">
+    <div class="section-label">Competitive Programming</div>
+    <div class="section-title">Coding Profile</div>
+
+    <div class="coding-strip">
+      <div class="coding-item">
+        <div class="coding-number">Knight</div>
+        <div class="coding-label">LeetCode Badge</div>
+      </div>
+      <div class="coding-divider"></div>
+      <div class="coding-item">
+        <div class="coding-number">1852</div>
+        <div class="coding-label">Peak Rating</div>
+      </div>
+      <div class="coding-divider"></div>
+      <div class="coding-item">
+        <div class="coding-number">800+</div>
+        <div class="coding-label">Problems Solved</div>
+      </div>
+      <div class="coding-divider"></div>
+      <div class="coding-item">
+        <div class="coding-number">3+</div>
+        <div class="coding-label">Platforms</div>
+      </div>
+      <div class="coding-divider"></div>
+      <div class="coding-item">
+        <div class="coding-number">LeetCode</div>
+        <div class="coding-label">Codeforces · GFG</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════ ACHIEVEMENTS ══════════════════ -->
+  <section id="achievements" style="padding-top: 0;">
+    <div class="section-label">Recognition</div>
+    <div class="section-title">Honors &amp; Awards</div>
+
+    <div class="achievements-grid">
+      <div class="achievement-card">
+        <div class="achievement-badge badge-gold">🏆 Winner</div>
+        <div class="achievement-title">Data Strata Hackathon</div>
+        <div class="achievement-meta">Nov 2024 · ML Club, NIT Silchar</div>
+      </div>
+
+      <div class="achievement-card">
+        <div class="achievement-badge badge-silver">🥉 Top 3</div>
+        <div class="achievement-title">Riddlex</div>
+        <div class="achievement-meta">Apr 2025 · CSS Society, NIT Silchar</div>
+      </div>
+
+      <div class="achievement-card">
+        <div class="achievement-badge badge-blue">Finalist</div>
+        <div class="achievement-title">Neurathon 2025</div>
+        <div class="achievement-meta">Feb 2025 · ML Club, NIT Silchar</div>
+      </div>
+
+      <div class="achievement-card">
+        <div class="achievement-badge badge-green">Top 12</div>
+        <div class="achievement-title">Robotrix 2025</div>
+        <div class="achievement-meta">Dec 2024 · NIT Karnataka</div>
+      </div>
+
+      <div class="achievement-card" style="grid-column: span 2;">
+        <div class="achievement-badge badge-blue">Academic</div>
+        <div class="achievement-title">CGPA 8.78 · Class 10 HSLC 98.5% · Class 12 HSC 91.8%</div>
+        <div class="achievement-meta">NIT Silchar · Vivekananda Vidya Niketan · Sai Vikash Jr College</div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════ EDUCATION ══════════════════ -->
+  <section style="padding-top: 0;">
+    <div class="section-label">Education</div>
+    <div class="section-title">Academic Background</div>
+
+    <div class="edu-timeline">
+      <div class="edu-item">
+        <div class="edu-year">2023 – 2027</div>
+        <div class="edu-title">B.Tech — Electronics &amp; Instrumentation Engineering</div>
+        <div class="edu-meta">National Institute of Technology, Silchar · Silchar, India</div>
+        <span class="edu-score">CGPA: 8.78 (5 Semesters)</span>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-year">2021 – 2023</div>
+        <div class="edu-title">AHSEC HSC Class 12</div>
+        <div class="edu-meta">Sai Vikash Junior College, Guwahati · Assam, India</div>
+        <span class="edu-score">91.8%</span>
+      </div>
+
+      <div class="edu-item">
+        <div class="edu-year">2008 – 2021</div>
+        <div class="edu-title">SEBA HSLC Class 10</div>
+        <div class="edu-meta">Vivekananda Vidya Niketan, Tihu · Assam, India</div>
+        <span class="edu-score">98.5%</span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ══════════════════ CONTACT ══════════════════ -->
+  <div id="contact">
+    <div class="contact-section">
+      <div class="section-label">Let's connect</div>
+      <h2 class="contact-title">Open to Opportunities</h2>
+      <p class="contact-sub">Eager to contribute and grow through opportunities in Software Engineering, Data Analytics, and AI/ML.</p>
+
+      <div class="contact-links">
+        <a href="mailto:ad2004ankita@gmail.com" class="contact-link">✉ Email</a>
+        <a href="https://github.com/ankitadevi" target="_blank" class="contact-link">⌥ GitHub</a>
+        <a href="https://www.linkedin.com/in/ankita-devi-24421726a/" target="_blank" class="contact-link">↗ LinkedIn</a>
+        <a href="https://leetcode.com/u/Ankita_Devi-2004/" target="_blank" class="contact-link">⌨ LeetCode</a>
+        <a href="https://codeforces.com/profile/ankita_07-08-2004" target="_blank" class="contact-link">⚡ CodeForces</a>
+        <a href="tel:+919395429787" class="contact-link">☎ +91-9395429787</a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════════════ FOOTER ══════════════════ -->
+  <footer>
+    © 2026 Ankita Devi · Built with passion from NIT Silchar
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+
+  <!-- Cursor blink style -->
+  <style>
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+  </style>
+
+
+  <script>
+    // 3D tilt on photo
+    const frame = document.getElementById('photoFrame');
+    if (frame) {
+      frame.addEventListener('mousemove', e => {
+        const r = frame.getBoundingClientRect();
+        const x = (e.clientX - r.left) / r.width  - 0.5;
+        const y = (e.clientY - r.top)  / r.height - 0.5;
+        frame.style.transform = `perspective(500px) rotateY(${x * 18}deg) rotateX(${-y * 18}deg) scale(1.04)`;
+      });
+      frame.addEventListener('mouseleave', () => {
+        frame.style.transform = 'perspective(500px) rotateY(0) rotateX(0) scale(1)';
+      });
+    }
+  </script>
+
+</body>
+</html>
