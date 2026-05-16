@@ -852,11 +852,7 @@ section { padding: 6rem 3.5rem; }
   color: var(--amber);
   transform: translateY(-2px);
 }
-.skill-pill.hl {
-  background: var(--blue-dim);
-  border-color: var(--b-blue);
-  color: var(--blue);
-}
+
 
 /* ── CODING STRIP ── */
 .coding-strip {
